@@ -1,7 +1,7 @@
 /* Elegant purple/green theme with blue highlights */
 :root {
   --bg: linear-gradient(135deg, #1c1534 0%, #1a2f38 45%, #1b3a55 65%, #1d4f31 100%);
-  --panel: rgba(255, 255, 255, 0.92);
+  --panel: rgba(255, 255, 255, 0.55);
   --text: #f5f7ff;
   --muted: rgba(245, 247, 255, 0.8);
   --accent: #6bd1ff;
@@ -131,6 +131,7 @@ a:hover {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
+  color: rgba(20, 20, 30, 0.92);
 }
 
 .panel h2 {
