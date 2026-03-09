@@ -1,54 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FCO Translations - Professional Media Localization</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCO Translations – Media Localization & Adaptation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
         <h1>FCO Translations</h1>
-        <p>Independent Translator Specializing in Media Localization</p>
-    </header>
+        <p class="tagline">Media Localization · Subtitling · Dubbing · Transcription</p>
+      </div>
 
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am an independent translator specialized in media localization. I translate videogames and subtitles, crafting language that feels native while maintaining the original tone and intent.</p>
-        </section>
-
-        <section id="services">
-            <h2>Services</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Videogame Localization</h3>
-                    <p>I provide end-to-end localization for games, adapting dialogue, UI, in-game text, and cultural references to engage players in their native language.</p>
-                </div>
-                <div class="service">
-                    <h3>Subtitle Translation</h3>
-                    <p>I create accurate, synchronized subtitles for series, films, documentaries, and more—preserving voice, tone, and timing for a seamless viewing experience.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <p>With a background in linguistics and media studies, I have worked with gaming studios and media producers to deliver translations that are culturally aware and technically precise. My workflow includes:</p>
-            <ul>
-                <li>Translating complex narratives and character dialogue</li>
-                <li>Adapting cultural references and local humor</li>
-                <li>Ensuring technical terminology accuracy</li>
-                <li>Collaborating with development teams for seamless integration</li>
-            </ul>
-        </section>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#profile">Profile</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Ready to connect with an experienced media localization specialist? Send a message and let's explore how we can work together.</p>
-        <p>Email: [Your Email Here]</p>
-        <p>LinkedIn: [Your LinkedIn Profile]</p>
+    <div class="hero">
+      <h2>Transforming Stories for Global Audiences</h2>
+      <p>Elegant language, cultural nuance, and technical precision for games, film, and streaming content.</p>
+      <a class="btn primary" href="#services">Explore services</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="profile" class="panel">
+      <h2>About Me</h2>
+      <div class="profile-grid">
+        <div class="profile-photo">
+          <img src="https://via.placeholder.com/320x320.png?text=Profile" alt="Profile photo">
+        </div>
+        <div class="profile-details">
+          <p>I'm an independent translator and localization specialist with a passion for bringing stories to new audiences. My work blends linguistic accuracy with creative adaptation so your project feels native in every language.</p>
+          <ul class="profile-list">
+            <li><strong>Languages:</strong> English, Spanish (native), Portuguese</li>
+            <li><strong>Focus:</strong> Video games, film, TV, documentaries, e-learning</li>
+            <li><strong>Tools:</strong> SDL Trados, memoQ, Subtitle Edit, Aegisub, Unity</li>
+          </ul>
+          <div class="profile-links">
+            <a class="btn secondary" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn secondary" href="#contact">Contact me</a>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section id="portfolio" class="panel">
+      <h2>Portfolio</h2>
+      <p class="panel-intro">A selection of recent projects showcasing localization, subtitles, and adaptation work.</p>
+
+      <div class="portfolio-filters" role="tablist" aria-label="Portfolio categories">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="localization" type="button">Localization</button>
+        <button class="filter-btn" data-filter="subtitles" type="button">Subtitles</button>
+        <button class="filter-btn" data-filter="dubbing" type="button">Dubbing</button>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery-item" data-category="localization">
+          <img src="https://via.placeholder.com/380x240.png?text=Game+Localization" alt="Game localization project">
+          <figcaption>
+            <h3>Game Localization</h3>
+            <p>UI, dialogue, and cultural adaptation for a narrative RPG.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="subtitles">
+          <img src="https://via.placeholder.com/380x240.png?text=Subtitle+Project" alt="Subtitle project">
+          <figcaption>
+            <h3>Streaming Subtitles</h3>
+            <p>Timed subtitles for a documentary series with tone-preserving translation.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="dubbing">
+          <img src="https://via.placeholder.com/380x240.png?text=Dubbing+Adaptation" alt="Dubbing adaptation project">
+          <figcaption>
+            <h3>Dubbing Adaptation</h3>
+            <p>Script adaptation and lip-sync-ready translation for an animated series.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="localization">
+          <img src="https://via.placeholder.com/380x240.png?text=UI+Localization" alt="UI localization project">
+          <figcaption>
+            <h3>UI &amp; UX Localization</h3>
+            <p>Interface translation with consistency across platforms and devices.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="services" class="panel">
+      <h2>Services</h2>
+      <p class="panel-intro">Choose a service to see how I help you reach more viewers and players.</p>
+
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="localization" type="button" role="tab" aria-selected="true">Localization</button>
+        <button class="tab-btn" data-tab="transcription" type="button" role="tab" aria-selected="false">Transcription</button>
+        <button class="tab-btn" data-tab="subtitling" type="button" role="tab" aria-selected="false">Subtitling</button>
+        <button class="tab-btn" data-tab="dubbing" type="button" role="tab" aria-selected="false">Dubbing &amp; Adaptation</button>
+      </div>
+
+      <div class="tab-panels">
+        <div class="tab-panel active" data-panel="localization" role="tabpanel">
+          <h3>Localization</h3>
+          <p>Full localization services for games, apps, and interactive media. I adapt dialogue, UI, in-game systems, marketing assets, and culture-specific references for your target audience.</p>
+          <ul>
+            <li>Translation + cultural adaptation</li>
+            <li>Terminology management &amp; glossary creation</li>
+            <li>UI/UX strings, tooltips, system messages</li>
+            <li>Quality assurance and linguistic testing</li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" data-panel="transcription" role="tabpanel">
+          <h3>Transcription</h3>
+          <p>Accurate transcription for interviews, podcasts, videos and live recordings, ready for captioning or translation workflows.</p>
+          <ul>
+            <li>Time-coded transcripts (SRT, VTT)</li>
+            <li>Speaker identification &amp; formatting</li>
+            <li>Turnaround options for tight deadlines</li>
+            <li>Confidentiality and secure file handling</li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" data-panel="subtitling" role="tabpanel">
+          <h3>Subtitling</h3>
+          <p>Subtitle creation that preserves tone, timing, and readability across all screen sizes. I deliver file formats ready for streaming platforms and broadcast.</p>
+          <ul>
+            <li>Translation + subtitle editing</li>
+            <li>Timecoding and frame-accurate sync</li>
+            <li>Style guide compliance (e.g., Netflix, YouTube)</li>
+            <li>Closed captions &amp; SDH (subtitles for the deaf and hard of hearing)</li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" data-panel="dubbing" role="tabpanel">
+          <h3>Dubbing, Translation &amp; Adaptation</h3>
+          <p>Script adaptation for dubbing and voice-over, prioritizing lip sync, rhythm, and character voice while keeping the original meaning.</p>
+          <ul>
+            <li>Lip-sync adaptation and phrasing</li>
+            <li>Character voice and tone preservation</li>
+            <li>Collaboration with directors and voice talent</li>
+            <li>On-set localization support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>If you'd like to work together, send a message and I'll reply within 24 hours.</p>
+
+        <div class="contact-grid">
+          <div class="contact-details">
+            <h3>Get in touch</h3>
+            <p><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></p>
+            <p><strong>Location:</strong> Remote / Global</p>
+          </div>
+
+          <form class="contact-form" action="#" method="POST" novalidate>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            </label>
+
+            <button class="btn primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>© <span id="year"></span> FCO Translations. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', event => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          event.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Tabs for services
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+
+        tabButtons.forEach(b => {
+          b.classList.toggle('active', b === btn);
+          b.setAttribute('aria-selected', b === btn);
+        });
+
+        tabPanels.forEach(panel => {
+          panel.classList.toggle('active', panel.dataset.panel === target);
+        });
+      });
+    });
+
+    // Portfolio filters
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(filter => {
+      filter.addEventListener('click', () => {
+        const filterValue = filter.dataset.filter;
+
+        filterButtons.forEach(btn => btn.classList.toggle('active', btn === filter));
+
+        galleryItems.forEach(item => {
+          const itemCategory = item.dataset.category;
+          item.style.display = filterValue === 'all' || itemCategory === filterValue ? '' : 'none';
+        });
+      });
+    });
+
+    // Update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
