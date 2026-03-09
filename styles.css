@@ -1,9 +1,9 @@
 /* Elegant purple/green theme with blue highlights */
 :root {
   --bg: linear-gradient(135deg, #1c1534 0%, #1a2f38 45%, #1b3a55 65%, #1d4f31 100%);
-  --panel: rgba(255, 255, 255, 0.55);
+  --panel: rgba(255, 255, 255, 0.18);
   --text: #f5f7ff;
-  --muted: rgba(245, 247, 255, 0.8);
+  --muted: rgba(245, 247, 255, 0.7);
   --accent: #6bd1ff;
   --accent2: #a078ff;
   --shadow: 0 18px 45px rgba(0, 0, 0, 0.42);
@@ -128,10 +128,11 @@ a:hover {
   margin-bottom: 3rem;
   padding: 2.25rem;
   background: var(--panel);
+  backdrop-filter: blur(14px);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
-  color: rgba(20, 20, 30, 0.92);
+  color: var(--text);
 }
 
 .panel h2 {
@@ -312,8 +313,9 @@ a:hover {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
